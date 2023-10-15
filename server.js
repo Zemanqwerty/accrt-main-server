@@ -18,6 +18,7 @@ app.use(cors());
 const userRouter = require('./router/user.router')(app);
 const guildRouter = require('./router/guild.router')(app);
 const authRouter = require('./router/auth.router')(app);
+const carRouter = require('./router/car.router')(app);
 
 app.use(errorMiddleware)
 

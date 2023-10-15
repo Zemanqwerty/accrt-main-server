@@ -46,7 +46,7 @@ class GuildController {
 
     async deleteById(req, res, next) {
         try {
-            const deletedGuildData = await GuildService.getById(req.params.id);
+            const deletedGuildData = await GuildService.deleteById(req.params.id);
 
             return res.json(deletedGuildData);
         } catch (e) {

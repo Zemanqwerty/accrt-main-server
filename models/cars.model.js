@@ -4,6 +4,10 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         allowNull: false
       },
+      carClass: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       carImageLink: {
         type: Sequelize.STRING,
         allowNull: false
